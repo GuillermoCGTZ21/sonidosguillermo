@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.el_me.sonidosguillermo.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reproducir sirena"
+        android:id="@+id/reproduciruno"
+        android:onClick="playAudio"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pausaruno"
+        android:layout_toStartOf="@+id/pausaruno"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pausar sirena"
+        android:id="@+id/pausaruno"
+        android:onClick="pauseAudio"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reproducir bob"
+        android:id="@+id/button"
+        android:onClick="playAudio1"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reproducir Halo"
+        android:id="@+id/button2"
+        android:onClick="playAudio2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/reproduciruno"
+        android:layout_alignEnd="@+id/reproduciruno" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pausar bob"
+        android:id="@+id/button4"
+        android:onClick="pauseAudio1"
+        android:layout_alignTop="@+id/button"
+        android:layout_toRightOf="@+id/reproduciruno"
+        android:layout_toEndOf="@+id/reproduciruno" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pausar Halo"
+        android:id="@+id/button5"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/reproduciruno"
+        android:layout_toEndOf="@+id/reproduciruno"
+        android:onClick="pauseAudio2" />
+
+</RelativeLayout>
